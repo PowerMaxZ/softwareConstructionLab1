@@ -18,9 +18,10 @@ public class Main {
             String line;
             while((line = br.readLine()) != null)
             {
-                String []split = line.split(" ");
-                if (Integer.parseInt(split[split.length - 1]) > 90) {
-                    System.out.println(line + " - mark is greater than 90");
+                String[] split = line.split(" ");
+                //Now it detects marks less than 80
+                if (Integer.parseInt(split[split.length - 1]) < 80) {
+                    System.out.println(line + " - mark is less than 80");
                     line = line.toLowerCase();
                 }
                 result = result.concat(line);
