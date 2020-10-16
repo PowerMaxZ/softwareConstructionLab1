@@ -19,8 +19,8 @@ public class Main {
             while((line = br.readLine()) != null)
             {
                 String []split = line.split(" ");
-                if (Integer.parseInt(split[split.length - 1]) > 90) {
-                    System.out.println(line + " - mark is greater than 90");
+                if (Integer.parseInt(split[split.length - 1]) > 180) {
+                    System.out.println(line + " - mark is greater than 180");
                     line = line.toLowerCase();
                 }
                 result = result.concat(line);
